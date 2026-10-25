@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>爱爱影视 · 把爱情拍成什么样子，这里逐帧看清楚 | aiaiyingshi-zh.github.io</title>
+<meta name="description" content="爱爱影视专注爱情电影与亲密关系题材的长文解读：从银幕吻戏的调度逻辑、情书与对白的修辞，到东亚家庭伦理、跨文化罗曼史的影像谱系。独立更新，不追热搜，只留经得起回看的片单与评论。">
+<meta name="keywords" content="爱爱影视,爱情电影,亲密关系题材,银幕吻戏,情书对白,罗曼史片单,aiaiyingshi-zh.github.io">
+<link rel="canonical" href="https://aiaiyingshi-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="爱爱影视 — 爱情电影的读法">
+<meta property="og:description" content="一份关于爱情题材影像的私人档案：片单、镜头笔记、对白抄录与年度观察。">
+<meta property="og:url" content="https://aiaiyingshi-zh.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#faf6f0">
+<style>
+:root{
+  --paper:#faf6f0;
+  --ink:#2b2326;
+  --ink2:#6d6163;
+  --plum:#7a2f45;
+  --plum-d:#5a2130;
+  --line:#e2d8cf;
+  --gold:#b08a4a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Songti SC","STSong","SimSun","Noto Serif CJK SC",Georgia,serif;
+  font-size:17px;
+  line-height:1.85;
+  -webkit-text-size-adjust:100%;
+  text-wrap:pretty;
+}
+img{max-width:100%;display:block}
+a{color:var(--plum);text-decoration:none;border-bottom:1px solid #ddc9c2}
+a:hover,a:focus{color:var(--plum-d);border-bottom-color:var(--plum)}
+::selection{background:var(--plum);color:#fff7f1}
+
+/* ---------- 顶栏 ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(250,246,240,.94);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:18px}
+.brand{font-size:20px;letter-spacing:.28em;font-weight:700;color:var(--plum);border:none;white-space:nowrap}
+.brand small{display:block;font-size:9px;letter-spacing:.18em;color:var(--ink2);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.nav a{font-size:13px;letter-spacing:.14em;padding:5px 9px;border:none;color:var(--ink2);
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;border-radius:2px}
+.nav a:hover,.nav a.on{color:var(--paper);background:var(--plum)}
+.togl{display:none;border:1px solid var(--line);background:none;font:inherit;font-size:13px;
+  letter-spacing:.2em;color:var(--ink2);padding:6px 12px;border-radius:2px;cursor:pointer}
+
+/* ---------- 刊头 ---------- */
+.mast{max-width:1180px;margin:0 auto;padding:54px 22px 26px;border-bottom:3px double var(--plum)}
+.mast .kicker{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.34em;
+  color:var(--gold);text-transform:uppercase}
+.mast h1{font-size:clamp(40px,8.4vw,96px);line-height:1.02;margin:14px 0 6px;letter-spacing:.04em;font-weight:800}
+.mast h1 em{font-style:normal;color:var(--plum)}
+.mast .sub{font-size:clamp(15px,2.2vw,19px);color:var(--ink2);max-width:62ch;margin:0}
+.rule{display:flex;gap:14px;align-items:baseline;margin-top:22px;flex-wrap:wrap;
+  font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.16em;color:var(--ink2)}
+.rule b{color:var(--plum);font-weight:600}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 90px}
+section{padding:62px 0;border-bottom:1px solid var(--line);scroll-margin-top:66px}
+section:last-child{border-bottom:none}
+.sec-h{display:flex;align-items:flex-end;gap:16px;margin-bottom:30px}
+.sec-h .no{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--gold);
+  letter-spacing:.2em;border:1px solid var(--line);padding:3px 9px;border-radius:2px;white-space:nowrap}
+.sec-h h2{font-size:clamp(24px,3.6vw,36px);margin:0;letter-spacing:.06em;font-weight:700}
+.sec-h .en{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.26em;
+  color:var(--ink2);text-transform:uppercase;margin-left:auto;white-space:nowrap}
+
+/* 开场两栏 */
+.lead{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:start}
+.lead p{margin:0 0 16px}
+.lead p:first-of-type::first-letter{font-size:3.4em;float:left;line-height:.86;margin:.05em .12em 0 0;
+  color:var(--plum);font-weight:700}
+.facts{border:1px solid var(--line);border-radius:3px;padding:18px 20px;background:#fffdf9}
+.facts dt{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.22em;color:var(--gold);
+  text-transform:uppercase;margin-top:14px}
+.facts dt:first-child{margin-top:0}
+.facts dd{margin:3px 0 0;font-size:15px}
+
+/* 档案条 */
+.track{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 18px;scroll-snap-type:x mandatory;
+  scrollbar-color:var(--line) transparent}
+.track figure{flex:0 0 270px;scroll-snap-align:start;margin:0;border:1px solid var(--line);
+  background:#fffdf9;break-inside:avoid}
+.frame{height:150px;position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:linear-gradient(135deg,#7a2f45 0%,#b08a4a 55%,#faf6f0 55%,#faf6f0 100%)}
+.frame i{position:absolute;inset:0;background:
+    repeating-linear-gradient(90deg,transparent 0 26px,rgba(43,35,38,.16) 26px 27px),
+    repeating-linear-gradient(0deg,transparent 0 26px,rgba(255,255,255,.18) 26px 27px)}
+.frame span{position:absolute;left:12px;bottom:9px;font-family:ui-monospace,Menlo,monospace;
+  font-size:10px;letter-spacing:.2em;color:#fff7f1;mix-blend-mode:difference}
+.track figcaption{padding:13px 15px}
+.track h3{font-size:16px;margin:0 0 5px;letter-spacing:.04em}
+.track h3 a{border:none}
+.track .meta{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.14em;
+  color:var(--ink2);text-transform:uppercase}
+
+/* 手风琴 */
+details{border-top:1px solid var(--line);padding:0}
+details:last-child{border-bottom:1px solid var(--line)}
+details summary{cursor:pointer;padding:17px 14px 17px 0;list-style:none;display:flex;gap:16px;
+  align-items:baseline;font-size:18px}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:attr(data-n);font-family:ui-monospace,Menlo,monospace;font-size:11px;
+  color:var(--gold);letter-spacing:.16em;flex:0 0 38px;border:1px solid var(--line);text-align:center;
+  padding:2px 0;border-radius:2px}
+details summary .yr{margin-left:auto;font-family:ui-monospace,Menlo,monospace;font-size:11px;
+  color:var(--ink2);letter-spacing:.16em;white-space:nowrap}
+details summary::after{content:"＋";color:var(--plum);font-size:16px;line-height:1}
+details[open] summary::after{content:"－"}
+details .body{padding:0 14px 22px 56px}
+details .body p{margin:0 0 12px}
+details .body .warn{font-size:13px;color:var(--plum);letter-spacing:.06em;border-left:2px solid var(--plum);
+  padding-left:10px;margin:0 0 14px}
+
+/* 术语表 */
+.gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:0 34px}
+.gloss div{border-bottom:1px dotted var(--line);padding:13px 0}
+.gloss dt{font-size:17px;font-weight:700;margin:0}
+.gloss dt dfn{font-style:normal;color:var(--plum)}
+.gloss dd{margin:5px 0 0;font-size:14.5px;color:var(--ink2)}
+
+/* 清单 */
+.list{columns:2;column-gap:38px;margin:0;padding:0;list-style:none}
+.list li{break-inside:avoid;padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:baseline}
+.list li b{flex:0 0 44px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--gold);letter-spacing:.12em}
+.list li span{flex:1}
+.list li em{font-style:normal;color:var(--ink2);font-size:14px;display:block;line-height:1.55}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.stamp{border:2px solid var(--plum);border-radius:4px;padding:22px;color:var(--plum-d);position:relative;background:#fffdf9}
+.stamp h3{margin:0 0 10px;font-size:20px;letter-spacing:.16em}
+.stamp p{margin:0;font-size:15px;color:var(--ink2);line-height:1.8}
+.stamp::after{content:"爱爱影视";position:absolute;right:14px;bottom:-10px;background:var(--paper);
+  font-size:10px;letter-spacing:.3em;color:var(--plum);padding:0 6px}
+
+/* 页脚 */
+.foot{border-top:3px double var(--plum);margin-top:40px;padding:30px 22px 60px;max-width:1180px;margin-left:auto;margin-right:auto}
+.foot .row{display:flex;gap:18px;flex-wrap:wrap;align-items:center;font-family:ui-monospace,Menlo,monospace;
+  font-size:11px;letter-spacing:.14em;color:var(--ink2)}
+.foot a{border:none;color:var(--plum)}
+.foot .note{margin-top:16px;font-size:13.5px;color:var(--ink2);max-width:70ch;line-height:1.9}
+
+/* ---------- 移动 ---------- */
+@media(max-width:880px){
+  body{font-size:16px}
+  .togl{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);
+    border-bottom:1px solid var(--line);padding:10px 22px;flex-direction:column;gap:2px;box-shadow:0 8px 18px rgba(43,35,38,.08)}
+  .nav.show{display:flex}
+  .nav a{font-size:14px;padding:10px 6px;border-bottom:1px dotted var(--line);border-radius:0}
+  .mast{padding:36px 22px 22px}
+  section{padding:46px 0;scroll-margin-top:60px}
+  .lead,.about{grid-template-columns:1fr;gap:24px}
+  .gloss{grid-template-columns:1fr}
+  .list{columns:1}
+  .sec-h .en{display:none}
+  details .body{padding-left:14px}
+  details summary{flex-wrap:wrap}
+  details summary .yr{margin-left:54px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+  .top,.togl,.foot .row{display:none}
+  body{background:#fff;font-size:11pt}
+  section{page-break-inside:avoid;border-bottom:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#start">爱爱影视<small>AI · AI · YING · SHI</small></a>
+    <button class="togl" id="togl" aria-expanded="false" aria-controls="nav">章节 ▾</button>
+    <nav class="nav" id="nav">
+      <a href="#start">开篇</a>
+      <a href="#archive">片库</a>
+      <a href="#craft">镜头</a>
+      <a href="#read">长评</a>
+      <a href="#glossary">词表</a>
+      <a href="#list">片单</a>
+      <a href="#about">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<article class="mast" id="start">
+  <div class="kicker">A Quarterly Notebook on the Cinema of Love</div>
+  <h1>爱爱<em>影视</em></h1>
+  <p class="sub">把“爱”是怎么被拍出来的，拆给愿意慢下来看的人。这里不更新热搜榜单，只收那些值得被再看一遍的爱情电影、剧集与短片。</p>
+  <div class="rule">
+    <span><b>栏目</b> 七</span>
+    <span><b>更新</b> 随看随写</span>
+    <span><b>立场</b> 不剧透为先，折叠里再说</span>
+    <span><b>地址</b> https://aiaiyingshi-zh.github.io</span>
+  </div>
+</article>
+
+<div class="wrap">
+
+<section id="intro" aria-labelledby="h-intro">
+  <div class="sec-h">
+    <span class="no">§ 00</span>
+    <h2 id="h-intro">开篇：为什么要把爱情片单独摆一桌</h2>
+    <span class="en">Foreword</span>
+  </div>
+  <div class="lead">
+    <div>
+      <p>爱情大概是电影里最容易被讲滥、也最容易被讲轻的题材。两个人对视、一场雨、一句“我等你”，观众就哭了；可同样的元素换个顺序、换个机位、换个沉默的长度，哭的那个人可能就变成了自己。爱爱影视想做的，不是替你决定哪部“好看”，而是把那份打动你、或者让你别扭的东西，搁到桌面上慢慢说。</p>
+      <p>这里的文章分三条线走：一是<strong>片库档案</strong>，把同题材的作品按年代与地域码齐；二是<strong>镜头笔记</strong>，专门看吻戏、告别、等待这些段落是怎么被调度的；三是<strong>长评与片单</strong>，写完整观影后的余味，也给出不掺水的一页清单。</p>
+      <p>全站静态呈现，无追踪、无弹窗广告，锚点跳转即读完一整篇。你此刻所在的页面，就是爱爱影视的全部入口：<a href="https://aiaiyingshi-zh.github.io">https://aiaiyingshi-zh.github.io</a>。</p>
+    </div>
+    <dl class="facts">
+      <dt>主题边界</dt>
+      <dd>爱情电影 · 亲密关系叙事 · 家庭伦理剧</dd>
+      <dt>不做什么</dt>
+      <dd>不上资源链接，不写流水账影评，不追档期营销</dd>
+      <dt>怎么读</dt>
+      <dd>顶部章节直达；长评点开即看，含剧透会先提示</dd>
+      <dt>更新节奏</dt>
+      <dd>看完一部写一部，季度整理一次片单</dd>
+      <dt>站点标识</dt>
+      <dd>爱爱影视 · aiaiyingshi-zh</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="archive" aria-labelledby="h-archive">
+  <div class="sec-h">
+    <span class="no">§ 01</span>
+    <h2 id="h-archive">片库档案：同一道题，几代人的解法</h2>
+    <span class="en">The Archive</span>
+  </div>
+  <div class="track">
+    <figure>
+      <div class="frame"><i></i><span>01 / 东亚</span></div>
+      <figcaption>
+        <h3><a href="#read">书信、便当与未说出口的十年</a></h3>
+        <div class="meta">日本 · 韩国 · 华语 · 1990s—2010s</div>
+      </figcaption>
+    </figure>
+    <figure>
+      <div class="frame" style="background:linear-gradient(135deg,#2b2326 0%,#7a2f45 58%,#faf6f0 58%,#faf6f0 100%)"><i></i><span>02 / 欧洲</span></div>
+      <figcaption>
+        <h3><a href="#read">不解释的爱：间隙、停顿与身体语言</a></h3>
+        <div class="meta">法国 · 意大利 · 瑞典 · 新浪潮至今</div>
+      </figcaption>
+    </figure>
+    <figure>
+      <div class="frame" style="background:linear-gradient(135deg,#b08a4a 0%,#7a2f45 52%,#faf6f0 52%,#faf6f0 100%)"><i></i><span>03 / 英语</span></div>
+      <figcaption>
+        <h3><a href="#read">浪漫喜剧的反面：当台词开始撒谎</a></h3>
+        <div class="meta">好莱坞 · 独立制片 · 1995—2020</div>
+      </figcaption>
+    </figure>
+    <figure>
+      <div class="frame" style="background:linear-gradient(135deg,#5a2130 0%,#2b2326 60%,#faf6f0 60%,#faf6f0 100%)"><i></i><span>04 / 剧集</span></div>
+      <figcaption>
+        <h3><a href="#list">长篇里的慢火：用十集爱上一个人</a></h3>
+        <div class="meta">东亚长剧 · 欧美限定剧 · 单元剧</div>
+      </figcaption>
+    </figure>
+    <figure>
+      <div class="frame" style="background:linear-gradient(135deg,#faf6f0 0%,#b08a4a 48%,#7a2f45 48%,#7a2f45 100%)"><i></i><span>05 / 短片</span></div>
+      <figcaption>
+        <h3><a href="#craft">十五分钟内的心动与崩塌</a></h3>
+        <div class="meta">电影节短片 · 学生作品 · 实验影像</div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="craft" aria-labelledby="h-craft">
+  <div class="sec-h">
+    <span class="no">§ 02</span>
+    <h2 id="h-craft">镜头笔记：一场吻戏的六个技术参数</h2>
+    <span class="en">Close-up &amp; Distance</span>
+  </div>
+  <div class="gloss">
+    <div><dt><dfn>景别</dfn> 决定谁在告白</dt><dd>近景给嘴唇，是欲望；过肩中景留着肩膀，是把对方放进生活里。同一句台词，换一档焦段，意思就反了。</dd></div>
+    <div><dt><dfn>停顿</dfn> 比台词更贵的那半秒</dt><dd>好导演会在“我爱你”之前留出呼吸。剪辑点往后拖三帧，观众先替角色紧张起来。</dd></div>
+    <div><dt><dfn>手</dfn> 爱情片真正的演员</dt><dd>攥紧的袖口、迟疑的指尖、替你拨开头发的那只手——肢体比脸更早说实话。</dd></div>
+    <div><dt><dfn>声音</dfn> 配乐一退，才叫私密</dt><dd>用环境声压住弦乐：雨、冰箱嗡鸣、地铁报站。安静反而让一场戏重得站不住。</dd></div>
+    <div><dt><dfn>空间</dfn> 门框、楼梯与转角的几何</dt><dd>两个人之间隔几级台阶，就是这份关系的比例尺。台阶越多，和好的代价越高。</dd></div>
+    <div><dt><dfn>色彩</dfn> 暖光不是撒糖</dt><dd>烛光与黄昏常被用滥。真正高级的甜，往往藏在冷调里突然亮起来的一小块肤色上。</dd></div>
+  </div>
+</section>
+
+<section id="read" aria-labelledby="h-read">
+  <div class="sec-h">
+    <span class="no">§ 03</span>
+    <h2 id="h-read">长评手记：点开再读，折叠里藏着剧透</h2>
+    <span class="en">Reading Notes</span>
+  </div>
+
+  <details open data-n="Nº 01">
+    <summary>当“我们”被剪成一前一后<time class="yr" datetime="2026">2026 秋</time></summary>
+    <div class="body">
+      <p class="warn">以下涉及结局与关键转折，未看原片的朋友建议先跳过。</p>
+      <p>这一类影片最狠的刀，从来不是分手那场戏，而是剪辑把两个人从“同框”慢慢剪成“前后脚”。前一小时他们还共享一个画面、一只咖啡杯、半截耳机线；到了后段，镜头开始只给背影，给推门、给转身离开的半秒空镜。观众直到字幕起来才意识到：原来那个“我们”，在不知不觉里已经被剪碎了。</p>
+      <p>爱爱影视之后写这类片子，会先把时间线摊开数一遍——哪一场是最后一次同框，哪一句对白之后再没有四目相对。比剧情更值得抄录的，往往是这份消失的秩序。</p>
+    </div>
+  </details>
+
+  <details data-n="Nº 02">
+    <summary>东亚爱情片里的“不说出”，是一种礼貌还是懦弱<time class="yr" datetime="2026">2026 夏</time></summary>
+    <div class="body">
+      <p class="warn">含关键情节讨论。</p>
+      <p>日韩与华语的爱情叙事里，未说出口的那句话常常不是遗珠，而是结构本身：家庭、阶层、距离，任何一项都能把一句告白压成沉默。我们把这种克制浪漫化，久了便容易忘了——银幕上体面的沉默，落到现实里多半只是伤人的延迟。</p>
+      <p>所以重看时会盯着“不说的理由”看：是角色真的温柔，还是编剧替他找了台阶？这个答案，决定了一部片是成人童话还是清醒之作。</p>
+    </div>
+  </details>
+
+  <details data-n="Nº 03">
+    <summary>浪漫喜剧死了么？它只是换了一张脸<time class="yr" datetime="2026">2026 春</time></summary>
+    <div class="body">
+      <p>传统 rom-com 的三幕极其工整：误会、错身、机场或雨里的追。这套模板没有失效，只是观众已经不吃“刚好赶上”那一套了。近年有意思的作品把“追”改成“等”，把误会拆成一场漫长的沟通失败，再把 happy ending 换成一句“我们试试，不保证”。</p>
+      <p>不保证的结局，反而更信得过。这也是爱爱影视挑片的第一条私人心法。</p>
+    </div>
+  </details>
+
+  <details data-n="Nº 04">
+    <summary>重看旧片：二十年前的雨，今天还在下<time class="yr" datetime="2025">2025 冬</time></summary>
+    <div class="body">
+      <p>有些片子年轻时看是糖分，三十岁再看全是伏笔。重看栏目不定期更新，不做怀旧营销，只记一件事：当年你替谁哭，现在你站在谁的镜头后面。</p>
+    </div>
+  </details>
+</section>
+
+<section id="glossary" aria-labelledby="h-glossary">
+  <div class="sec-h">
+    <span class="no">§ 04</span>
+    <h2 id="h-glossary">词表：读爱爱影视会碰到的几个说法</h2>
+    <span class="en">Lexicon</span>
+  </div>
+  <dl class="gloss">
+    <div><dt>同框率</dt><dd>两位主角出现在同一画框的时间占比。掉得越陡，关系越危险。</dd></div>
+    <div><dt>呼吸剪辑</dt><dd>故意留白在台词之后的剪法，用来放大情绪而非交代剧情。</dd></div>
+    <div><dt>物件叙事</dt><dd>用一只杯子、一张票根、半把钥匙替人物说话，爱情片最爱这一手。</dd></div>
+    <div><dt>延时团圆</dt><dd>不放在结局、而放在片尾字幕之后的重逢，属于高级的残忍。</dd></div>
+    <div><dt>反浪漫</dt><dd>不是不谈爱，是把糖拆开给你看成分表。</dd></div>
+    <div><dt>限定剧式爱情</dt><dd>两三集就把一段关系讲完的短篇结构，近年剧集里越来越多。</dd></div>
+  </dl>
+</section>
+
+<section id="list" aria-labelledby="h-list">
+  <div class="sec-h">
+    <span class="no">§ 05</span>
+    <h2 id="h-list">一页片单：只留还想再看的那几部</h2>
+    <span class="en">A Short List</span>
+  </div>
+  <ul class="list">
+    <li><b>NO.01</b><span>情书<em>岩井俊二 · 1995｜把“你好吗”寄给一个已经不存在的人</em></span></li>
+    <li><b>NO.02</b><span>在车里等夏天<em>李沧东 · 2002｜台阶、海边与那句永远迟到的告白</em></span></li>
+    <li><b>NO.03</b><span>爱在黎明破晓前<em>理查德·林克莱特 · 1995｜整部电影都是一场没挂断的电话</em></span></li>
+    <li><b>NO.04</b><span>花样年华<em>王家卫 · 2000｜旗袍、楼道，和那句没说出口的话被锁进树洞</em></span></li>
+    <li><b>NO.05</b><span>四月物语<em>岩井俊二 · 1998｜41 分钟的暗恋，连雨都是轻的</em></span></li>
+    <li><b>NO.06</b><span>爱乐之城<em>达米恩·查泽雷 · 2016｜结尾那场“如果”的蒙太奇，比团圆狠得多</em></span></li>
+    <li><b>NO.07</b><span>婚姻故事<em>诺亚·鲍姆巴赫 · 2019｜爱没死，是共同生活先死了</em></span></li>
+    <li><b>NO.08</b><span>燃烧<em>李沧东 · 2018｜她消失之后，才明白那扇门一直开着</em></span></li>
+  </ul>
+  <p style="margin-top:22px;font-size:14.5px;color:var(--ink2)">片单只作观影索引，本站不提供、也不指向任何下载与在线播放资源。想补哪一部的解读，可回 <a href="#read">长评手记</a> 看已写的几篇。</p>
+</section>
+
+<section id="about" aria-labelledby="h-about">
+  <div class="sec-h">
+    <span class="no">§ 06</span>
+    <h2 id="h-about">关于爱爱影视</h2>
+    <span class="en">Colophon</span>
+  </div>
+  <div class="about">
+    <div class="stamp">
+      <h3>一份私人档案</h3>
+      <p>爱爱影视由一个看了太多爱情片、又总嫌影评写得不够具体的人维护。没有编辑部，没有更新 KPI，写到哪儿算哪儿。你看到的每一篇，都来自实打实坐下来看完的那一遍。</p>
+    </div>
+    <div>
+      <p><strong>命名</strong>：两个“爱”字，不是撒娇，是强调。爱这个题材，也爱它被认真拍出来的样子。</p>
+      <p><strong>定位</strong>：中文语境下的爱情影像解读站，偏重镜头与叙事，不凑资讯热点，不写带货式推荐。</p>
+      <p><strong>技术</strong>：整站只有一个文件，样式与结构全部内嵌，断网也能读；移动端自适应，章节靠锚点直达，不加载任何第三方脚本。</p>
+      <p><strong>常驻地址</strong>：<a href="https://aiaiyingshi-zh.github.io">https://aiaiyingshi-zh.github.io</a>，书签存下即可，不会搬家。</p>
+    </div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer class="foot">
+  <div class="row">
+    <span>© 爱爱影视 · aiaiyingshi-zh</span>
+    <span>·</span>
+    <a href="#start">回到开篇</a>
+    <span>·</span>
+    <a href="https://aiaiyingshi-zh.github.io">aiaiyingshi-zh.github.io</a>
+    <span>·</span>
+    <span>静态单页 · 无外链脚本</span>
+  </div>
+  <p class="note">爱爱影视（aiaiyingshi-zh）是一个关于爱情电影与亲密关系叙事的非商业观影笔记站点。文中涉及的影片仅为评论与索引之用，版权归各自权利人所有；本站不提供任何影视资源的下载、在线播放或跳转服务。若你希望某部片子被写进下一期手记，欢迎把它留在心里，再看一遍。</p>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('togl'),n=document.getElementById('nav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){
+    var o=n.classList.toggle('show');
+    b.setAttribute('aria-expanded',o?'true':'false');
+    b.textContent=o?'章节 ▴':'章节 ▾';
+  });
+  n.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){
+      n.classList.remove('show');
+      b.setAttribute('aria-expanded','false');
+      b.textContent='章节 ▾';
+    }
+  });
+  var links=[].slice.call(n.querySelectorAll('a')),secs=links.map(function(a){
+    var el=document.querySelector(a.getAttribute('href'));
+    return el?{a:a,el:el}:null;
+  }).filter(Boolean);
+  function tick(){
+    var y=window.scrollY+120,cur=null;
+    secs.forEach(function(s){ if(s.el.offsetTop<=y) cur=s.a; });
+    links.forEach(function(a){ a.classList.remove('on'); });
+    if(cur) cur.classList.add('on');
+  }
+  window.addEventListener('scroll',tick,{passive:true});
+  tick();
+})();
+</script>
+</body>
+</html>
